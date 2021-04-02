@@ -63,4 +63,4 @@ class Graph:
                     h1 = high - pair[1]
                 s += text[int(h0)][int(h1)]
             r.append(s)
-        return r
+        return reversed(r)
