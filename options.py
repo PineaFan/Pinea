@@ -281,17 +281,3 @@ class Menu:
             return MenuResponse(statsus="List", response=(out))
         else:
             raise ValueError(f"{self.type} is not a valid type")
-
-
-print(Menu(
-    options={
-        "Fast": "SPEED",
-        "Average": "aight",
-        "Slow": "speed up",
-        "Other": Other(minmax=(2, 20))
-    },
-    style=Triangle(),
-    title=f"{Colours.Green} Response Time",
-    complete="Enter",
-    type="Single"
-).display().response)
