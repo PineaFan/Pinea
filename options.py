@@ -199,7 +199,7 @@ class Menu:
             os.system("clear")
             if isinstance(flattened[selected][1], Other):
                 if (flattened[selected][1].max > len(typed) >= flattened[selected][1].min):
-                    return MenuResponse(statsus="Option", response=(flattened[selected][0], typed))
+                    return MenuResponse(statsus="Other", response=(typed))
                 else:
                     return MenuResponse(statsus="Failed", response=("Other did not meet length requirements"))
             return MenuResponse(statsus="Option", response=(flattened[selected][0]))
