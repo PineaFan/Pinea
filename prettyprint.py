@@ -95,9 +95,3 @@ def prettyprint(data: any, indent: int = 4, show_types: bool = False, colour_cod
             line = line[:tw-len(info)] + info
         out.append(line)
     print("\n".join(out) + "\033[0m")
-
-
-prettyprint(
-    [1, [2, [3, "4"], True, (1, 2.5, False)], {False, "aaaah"}, b"aaaaa", bytearray(5), {"a": 1, 2: ["b", "c"]}, "a"*500, prettyprint],
-    debug=True
-)
