@@ -75,5 +75,6 @@ def colour(text=0, soft_text: bool = False, background=0, soft_background: bool 
 
     return f"\033[{background};{text}{decorations}m"
 
+
 def clear():
     return f"\033[0;0m"

@@ -30,6 +30,16 @@ Is your terminal not included? Create a PR and add it, along with its support le
 ```py
 import colourterm
 
+"""
+colour = colourterm.colour(
+  text=int|str,
+  soft_text=bool,
+  background=int|str,
+  soft_background=bool,
+  decoration=str
+)
+"""
+
 colour = colourterm.colour(text='green', background='black', decoration='bi')
 # Create green text on a black background. Set the text to bold and italics
 print(f"{colour}Hello world!")
