@@ -66,7 +66,10 @@ def _process(s, indent, show_types, colour_coded, debug):
         db = f" | Length: {len(s)}" if debug else ""
         t = f"<{type(s).__name__}{db}> " if show_types else ""
         string.append(i + _getCol(s) + f"{t}{brackets[0]}")
-        string += _list(s, indent, show_types, colour_coded, debug)
+        if type(s) in [list, tuple, set]:
+            string += _list(s, indent, show_types, colour_coded, debug)
+        elif type(s) in [dict]:
+            string += _dict(s, indent, show_types, colour_coded, debug)
         string.append(i + _getCol(s) + brackets[1])
     elif type(s) in [bytes, bytearray]:
         string.append(_bytes(s, indent, show_types, colour_coded, debug))
@@ -75,11 +78,12 @@ def _process(s, indent, show_types, colour_coded, debug):
     return string
 
 
-def prettyprint(data: any, indent: int = 4, show_types: bool = False, colour_coded: bool = True, cutoff: bool = True, debug: bool = False):
+def pprint(data: any, indent: int = 4, show_types: bool = False, colour_coded: bool = True, cutoff: bool = True, debug: bool = False):
     try:
         tw = int(os.popen('stty size', 'r').read().split()[1])
     except IndexError:
-        tw = 100
+        cutoff = False
+        tw = 1000000
     if isinstance(indent, int):
         indent = [indent, 0]
     if debug:
@@ -95,3 +99,9 @@ def prettyprint(data: any, indent: int = 4, show_types: bool = False, colour_cod
             line = line[:tw-len(info)] + info
         out.append(line)
     print("\n".join(out) + "\033[0m")
+
+
+pprint(
+  {"a": [1, 2], "b": {1.4, False}, "c": [1, 2, [3, (4, 5)]]},
+  debug=True
+)
