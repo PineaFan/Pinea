@@ -98,4 +98,4 @@ def pprint(data: any, indent: int = 4, show_types: bool = False, colour_coded: b
             info = f"... [{len(line)}]"
             line = line[:tw-len(info)] + info
         out.append(line)
-    print("\n".join(out) + "\033[0m")
+    print("\n".join(out) + ("\033[0m" if colour_coded else ""))
