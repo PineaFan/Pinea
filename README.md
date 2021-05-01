@@ -18,8 +18,9 @@ OS      | Terminal       | Support
 Linux   | TTYs           | Full
 Linux   | Konsole        | Full
 Linux   | Yakuake        | Part [1]
-Windows | Command prompt | ?
-Windows | Powershell     | ?
+Windows | Command prompt | None
+Windows | Powershell     | None
+Windows | Terminal       | Full
 macOS   | Terminal       | Full
 
 Code | Missing
