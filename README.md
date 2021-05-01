@@ -105,7 +105,8 @@ prettyprint.pprint(
   show_types: bool = False,  # If the type of each item should be shown e.g. <int>
   colour_coded: bool = True,  # If colours should be used to show different types
   cutoff: bool = True,  # If text over multiple lines should be cut off
-  debug: bool = False  # Show length of itterables
+  debug: bool = False,  # Show length of itterables,
+  return_string: bool = False  # Does not automatically print, but instead returns the string it processed
 )
 """
 
