@@ -99,9 +99,3 @@ def pprint(data: any, indent: int = 4, show_types: bool = False, colour_coded: b
             line = line[:tw-len(info)] + info
         out.append(line)
     print("\n".join(out) + "\033[0m")
-
-
-pprint(
-  {"a": [1, 2], "b": {1.4, False}, "c": [1, 2, [3, (4, 5)]]},
-  debug=True
-)
