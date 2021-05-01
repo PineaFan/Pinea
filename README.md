@@ -1,8 +1,13 @@
 # Pinea
-A collection of utility programs, designed for me but can be used by anyone
+A collection of utility programs
 
------
+---
+## Contents
+- <a href="#colourterm"> Colourterm</a>
+- <a href="#options"> Options</a>
+- <a href="#prettyprint"> Prettyprint</a>
 
+<hr id="colourterm">
 
 ## Colourterm
 > Coloured text in your terminal. Support for bold, italics and maybe others soon
