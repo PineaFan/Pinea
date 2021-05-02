@@ -6,6 +6,7 @@ A collection of utility programs
 - <a href="#colourterm"> Colourterm</a>
 - <a href="#options"> Options</a>
 - <a href="#prettyprint"> Prettyprint</a>
+- <a href="#image"> Image</a>
 
 <hr id="colourterm">
 
@@ -141,3 +142,36 @@ prettyprint.pprint(
 }
 """
 ```
+
+<hr id="image">
+
+## Image
+> It's literally pointless, please don't use this for **any** practical purposes
+
+### Support
+OS      | Terminal         | Support
+--------|------------------|---------
+Linux   | TTYs             | Full
+Linux   | Konsole          | Full
+Linux   | Yakuake          | Full
+Windows | Command prompt   | None [0]
+Windows | Powershell       | None [0]
+Windows | Windows Terminal | Full
+macOS   | Terminal         | Full
+
+Code | Missing
+-----|-------------
+0    | Text colours
+
+> Is your terminal not included? Create a PR and add it, along with its support level.
+
+### Usage
+
+- Change line 17 to use your filename
+- Run the file
+
+### Bugs
+
+There's a lot of bugs. I won't fix them. This one is entirely a joke and is not designed to be used outside of a POC
+
+If you can fix the bugs, feel free to make a PR
