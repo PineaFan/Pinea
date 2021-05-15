@@ -84,8 +84,8 @@ OS      | Terminal         | Support
 Linux   | TTYs             | Full
 Linux   | Konsole          | Full
 Linux   | Yakuake          | Full
-Windows | Command prompt   | Part [0]
-Windows | Powershell       | Part [0]
+Windows | Command prompt   | None [0]
+Windows | Powershell       | None [0]
 Windows | Windows Terminal | Full
 macOS   | Terminal         | Full
 
