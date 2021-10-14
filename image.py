@@ -14,7 +14,7 @@ th, tw = os.popen('stty size', 'r').read().split()
 terminal = math.floor(int(tw)/2), int(th)
 
 # Download image
-image = Image.open("cmp.png")  # Add filename here
+image = Image.open("incomplete/cmp.png")  # Add filename here
 data = asarray(image)
 size = image.size
 
