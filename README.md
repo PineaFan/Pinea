@@ -18,7 +18,7 @@ OS      | Terminal         | Support
 --------|------------------|---------
 Linux   | TTYs             | Full
 Linux   | Konsole          | Full
-Linux   | Yakuake          | Part [1]
+Linux   | Yakuake          | Full
 Windows | Command prompt   | None [012]
 Windows | Powershell       | None [012]
 Windows | Windows Terminal | Full
